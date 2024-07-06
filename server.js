@@ -13,7 +13,7 @@ app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
-var dbUrl = 'mongodb+srv://Saiful123:ArXfJyNcbIIY2qVu@atlascluster.zirft53.mongodb.net/'
+var dbUrl = 'mongodb+srv://naim123:Ogq4rj4ZJqnH4uco@atlascluster.zirft53.mongodb.net/MeChatDB'
 
 // mongoose model (name, schema)
 var Message = mongoose.model('Message', {
