@@ -53,14 +53,14 @@
 
          function getMessages() {
 
-            $.get('http://localhost:3010/messages', (data) => {
+            $.get('https://mechat.adaptable.app/messages', (data) => {
                 data.forEach(addMessage);
             })
          }
 
          function postMessage(message) {
 
-            $.post('http://localhost:3010/messages', message )
+            $.post('https://mechat.adaptable.app/messages', message )
 
         }
 
