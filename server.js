@@ -13,11 +13,11 @@ app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
-var dbUrl = 'mongodb+srv://naim123:Ogq4rj4ZJqnH4uco@atlascluster.zirft53.mongodb.net/MeChatDB'
+var dbUrl = 'mongodb+srv://<connection link with mongo db>'
 
 // mongoose model (name, schema)
 var Message = mongoose.model('Message', {
-    name : String,
+    name: String,
     message: String
 })
 
@@ -32,7 +32,7 @@ app.get('/messages', (req, res) => { // route and res and req
         });
 })
 
-// mongoose is only work with promise
+// mongoose only work with promise
 app.post('/messages', (req, res) => { // route and res and req
     var message = new Message(req.body)
     message.save()
