@@ -27,8 +27,8 @@ A simple chat application built using **Node.js, Express, MongoDB, and Socket.io
 
 ### **1️⃣ Clone the Repository**  
 ```bash
-git clone https://github.com/yourusername/MyChat-App.git
-cd mychat
+git clone https:https://github.com/AHM-Saiful-Islam/MyChat-App.git
+
 ```
 
 ### **2️⃣ Install Dependencies**  
